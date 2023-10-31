@@ -1,67 +1,33 @@
-# CodeIgniter 4 Application Starter
+# RISKA Back-End Apps
 
-## What is CodeIgniter?
+Project ini merupakan tugas kelompok 1 untuk mata kuliah Mobile Programming di Universitas Bina Sarana Informatika Program Studi Sistem Informasi
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+Kami memilih judul projek ini terispirasi oleh kegiatan-kegiatan aktif organisasi RISKA (Remaja Islam Sunda Kelapa) yang salah satu anggotanya adalah Kusnadia (merupakan anggota kelompok 1 juga).
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## Anggota Kelompok 1
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+1. Trisnawan (ketua kelompok dan penanggung jawab back-end apps)
+2. Merdian (penanggung jawab mobile developer)
+3. Kusnadia (penanggung jawab project manager dan perancangan)
+4. Cecep (penanggung jawab UI/UX design)
+5. Silvai (penanggung jawab paper dan makalah)
+6. Reynaldo (penanggung jawab paper dan makalah)
+7. M Yusuf (penanggung jawab paper dan makalah)
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+## Teknologi
 
-## Installation & updates
+Project ini dibagi menjadi 2 aplikasi yaitu aplikasi mobile dengan menggunakan teknologi flutter dan aplikasi backend dengan menggunakan teknologi codeigniter 4.
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+Untuk aplikasi mobile ada di repositori terpisah.
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+Untuk mengunduh aplikasi backend ini silahkan ikuti langkah-langkah berikut:
 
-## Setup
+1. Clone project ini ke lokal komputer kamu
+2. Buat database dengan nama "riska"
+3. Jalankan Migration pada CodeIgniter 4
+4. Jalankan Seeder pada CodeIgniter 4
+5. Projek berhasil di install
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+Untuk menjalankan aplikasi backend ini minimal memiliki server PHP dan database MYSQL. Bisa menggunakan XAMPP, Laragon, WAMPP, ataupun lainnya.
 
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> **Warning**
-> The end of life date for PHP 7.4 was November 28, 2022. If you are
-> still using PHP 7.4, you should upgrade immediately. The end of life date
-> for PHP 8.0 will be November 26, 2023.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Karena ini menggunakan CodeIgniter 4, maka silahkan baca persyaratan minimal untuk instalasi CodeIgniter 4 pada situs resmi CodeIgniter
